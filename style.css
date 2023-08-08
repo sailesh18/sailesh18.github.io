@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	color: white;
+	margin: 0;
+}
+.o img{
+	
+	width: 100%;
+	position: fixed;
+	z-index: -100;
+	height: 100vh;
+
+}
+
+
+video{
+	z-index: 1000;
+	border-radius: 200px;
+}
+.vid{
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.cont1{
+	background: rgba(76, 175, 80, 0.5) ;
+
+	
+	
+	width: 100%;
+	height: 420px;
+}
+.v{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+.cont2{
+	background:rgba(110, 255, 246, 0.5);
+	width: 100%;
+	height: 455px;
+	
+}
+
+.journey img{
+	z-index: 1000;
+}
+
+.l{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+hr{
+
+	color: white;
+	width: 80%;
+
+}
+.cont3{
+	background: rgba(76, 175, 80, 0.5) ;
+	width: 100%;
+	height: 400px;
+
+}
+#sub1{
+	padding-top: 200px;
+	text-align: center;
+	font-family: 'Poppins' ;
+	font-weight: lighter;
+	font-size: 30px;
+
+
+}
+#sub{
+	padding-top: 20px;
+	text-align: center;
+	font-family: 'Poppins' ;
+	font-weight: lighter;
+	font-size: 30px;
+}
+.journey h1{
+	font-weight: lighter;
+	font-size: 130px;
+	margin-top: 100px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+font-weight: normal;
+
+}
+h1{
+	font-weight: lighter;
+	font-size: 130px;
+	margin-top: 150px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+font-weight: normal;
+}
+#hea a{
+	display: flex;
+	justify-content: flex-end;
+	
+	margin: auto;
+	text-decoration: none;
+	font-size: 20px;
+}
+ul{
+
+	margin-right: 25px;
+	margin-top: 20px;
+	display: flex;
+	font-family: sans-serif;
+	list-style: none;
+}
+li{
+
+	font-size: 20px;
+	padding: 15px;
+}
+.pro{
+	font-size: 50px;
+	text-align: center;
+}
+.pr{
+	font-size: 50px;
+	text-align: center;
+}
+.click
+{
+	color: black;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	height: 50px;
+	width: 100px;
+	background: rgba(76, 175, 80) ;
+	padding: 20px;
+	border-radius: 15px;
+	transition: background 0.5s ease-in-out;
+
+}
+.pro{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	
+
+}
+.click:hover{
+	
+	cursor: pointer;
+	background: yellow;
+
+}
+a{
+	text-decoration: none;
+}
+@media only screen and (max-width: 413px){
+	.journey h1{
+		font-size: 10vh;
+	}
+	#pro{
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&family=Vujahday+Script&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+	
+}
+header{
+	font-family: 'poppins';
+	z-index: 2;
+}
+.menu-bar
+{
+	background:skyblue;
+	text-align: center;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: red;
+}
+.menu-bar ul li{
+	color: black;
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu-bar ul li a{
+	text-decoration: none;
+	color: black;
+}
+ .menu-bar ul li:hover
+{
+	background: royalblue;
+	border-radius: 10px;
+}
+.menu-bar ul a:hover
+{
+	color: white;
+}
+
+.sub-menu-1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: skyblue ;
+	margin-top:15px ;
+	margin-left: -15px;
+	border-radius: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	background:;
+	border-radius: 8px;
+
+	text-align: left;
+
+}
+.sub-menu-2{
+	display: none;
+}
+.hover-me:hover .sub-menu-2{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background-color: rgb(0, 100, 0);
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url("gg_back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card
+{
+	position: relative;
+	width: 600px;
+	height: 350px;
+	margin: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 20px;
+	background: linear-gradient(135deg,#d41e31,#491f8f);
+}
+.card img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 400px;
+	transition: 0.5s;
+}
+.card:hover img{
+	left: 80%;
+	height: 500px;
+}
+.card .content
+{
+	
+	position: relative;
+	width: 50%;
+	left: 20%;
+	padding: 20px 20px 20px 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.card:hover .content{
+	opacity: 1;
+	visibility: visible;
+	left: 0;
+}
+.card .content h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+.card .content p{
+	color: #fff;
+
+}
+.card .content a{
+	position: relative;
+	display: inline-block;
+	color: #111;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: #fff;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+img{
+	z-index: 1;
+	
+}
+@media (max-width: 991px)
+{
+	.card
+	{
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		transition: 0.5s;
+	}
+	.card:hover
+	{
+		height: 600px;
+	}
+	.card:hover img
+	{
+		left: 80%;
+		height: 500px;
+	}
+	.card .content
+	{
+		width: 100%;
+		left: 0;
+		padding: 40px;
+
+	}
+}
+@media(max-width: 420px)
+{
+	.card .justify-content{
+		padding: 30px;
+	}
+	.card:hover img
+	{
+		left: 80%;
+		height: 500px;
+	}
+}
+#button
+{
+	z-index: 1000;
+	top: 50px;
+	float: left;
+}
+footer{
+	
+	width: 100%;
+	background: royalblue;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer .social-icon,
+footer .menu
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+
+}
+footer .social-icon li,
+footer .menu li
+{
+	list-style: none;
+}
+footer .social-icon li a
+{
+	font-size: 2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+footer .social-icon li a:hover{
+	transform: translateY(-10px);
+}
+
+footer .menu li a
+{
+	font-size: 1.2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	text-decoration: none;
+	opacity: 0.75;
+}
+footer .menu li a:hover
+{
+	opacity: 1;
+
+}
+footer p{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom:10px;
+	font-size: 1.1em;
+}
+
+
+
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
