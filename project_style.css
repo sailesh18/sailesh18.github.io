@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	
+	margin: 0;
+}
+#title{
+	z-index: 1;
+	text-align: center;
+	color: white;
+}
+body{
+	
+	font-family: 'Poppins', sans-serif;
+	/*background-image: url("ss.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	*/
+}
+#tags
+{
+	border: 3px solid white;
+	font-size: 15px;
+	border-radius: 10px;
+	background-color: rgb(236, 255, 29);
+	width: auto;
+	height: auto;
+	padding: 5px;
+	position:absolute;
+	top: -10px;
+	right: 10px;
+	color: #000;
+	
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  }
+#myVideo {
+	z-index: -1;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+  }
+header a{
+	text-decoration: none;
+	color: white;
+}
+.l a{
+	text-decoration: none;
+	color: black;
+
+}
+#hea{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+ul{
+
+	margin-right: 25px;
+	margin-top: 20px;
+	display: flex;
+	font-family: sans-serif;
+	list-style: none;
+}
+li{
+
+	color: white;
+	font-size: 20px;
+	padding: 15px;
+}
+
+.l{
+	
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 15px;
+	justify-content: space-evenly;
+
+}
+#tag1{
+	line-height: 98%;
+	font-size: 15px;
+	background-color: white;
+	color: black;
+	padding: 8px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin: 15px;
+	transition: background-color 1s;
+}
+#tag2{
+	line-height: 99%;
+	font-size: 15px;
+	background-color: white;
+	color: black;
+	padding: 8px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin: 15px;
+	transition: background-color 1s;
+}
+#tag1:hover{
+	background-color: black;
+	color: white;
+}
+#tag2:hover{
+	background-color: black;
+	color: white;
+}
+.container1{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-top: 15px;
+	text-align: center;
+	width: 437px;
+	height: 437px;
+	border: 1px solid black;
+	border-radius: 15px;
+	transition: background-color 1s;
+	transition: transform 1s;
+	
+}
+.container1:hover{
+	transform: scale(1.05);
+	
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+.container2:hover{
+	transform: scale(1.05);
+	
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+.container3:hover{
+	transform: scale(1.05);
+	
+	cursor: pointer;
+	background-color: whitesmoke;
+}
+.container2{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-top: 15px;
+	text-align: center;
+	width: 437px;
+	height: 437px;
+	border: 1px solid black;
+	border-radius: 15px;
+	transition: background-color 1s;
+	transition: transform 1s;
+	
+}
+.container3{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-top: 15px;
+	text-align: center;
+	width: 437px;
+	height: 437px;
+	border: 1px solid black;
+	border-radius: 15px;
+	transition: background-color 1s;
+	transition: transform 1s;
+	
+}
+
+@media only screen and (max-width: 413px){
+	.container3{
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.6);		padding-top: 15px;
+		text-align: center;
+		width: 237px;
+		height: 237px;
+		border: 1px solid black;
+		border-radius: 5px;
+		transition: background-color 1s;
+		transition: transform 1s;
+	}
+	.container3 img{
+		width:200px ;
+		height:100px ;
+	}
+	.container3 p{
+		font-size: 10px;
+	}
+	.container3 #cap{
+		position: relative;
+		bottom: 50px;
+	}
+	
+	h1{
+		font-size: 20px;
+	}
+	#hea{
+		font-size: 10px;
+	}
+	#tags{
+		font-size: 12px;
+	}
+	#tag1{
+		border: 0.5px solid yellow;
+		line-height: 88%;
+		font-size: 15px;
+		background-color: white;
+		color: black;
+		padding: 5px;
+		border-radius: 10px;
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		margin: 15px;
+		transition: background-color 1s;
+	}
+	#tag2{
+		border: 0.5px solid yellow;
+		line-height: 88%;
+		font-size: 15px;
+		background-color: white;
+		color: black;
+		padding: 5px;
+		border-radius: 10px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		margin: 15px;
+		transition: background-color 1s;
+	}
+
+}
