@@ -200,7 +200,7 @@ img{
 footer{
 	
 	width: 100%;
-	background: royalblue;
+	background: royalblue 0.6;
 	min-height: 100px;
 	padding: 20px 50px;
 	display: flex;
